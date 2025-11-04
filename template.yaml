@@ -17,10 +17,11 @@ spec:
       description: Name for the new repository
       required:
         - repoName
-
-      type: string
-      name: repoName
-      ui:field: Text
+      properties:
+        componentId:
+          title: Repo Name
+          type: string
+          description: Git Repository Name
 
     - title: Description
       description: Short description of the new repository
