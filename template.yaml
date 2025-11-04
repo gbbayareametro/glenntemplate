@@ -32,7 +32,7 @@ spec:
       name: Fetch Glenn's Template
       action: fetch:template
       input:
-        url: https://github.com/gbayareametro/glennstemplate
+        url: https://github.com/gbbayareametro/glennstemplate
         targetPath: .
         values:
           repoName: ${{ parameters.repoName }}
@@ -41,7 +41,7 @@ spec:
       name: Publish to GitHub
       action: publish:github
       input:
-        repoUrl: github.com/gbayareametro/${{ parameters.repoName }}
+        repoUrl: github.com/gbbayareametro/${{ parameters.repoName }}
         repoVisibility: public
         description: ${{ parameters.description }}
         defaultBranch: main
