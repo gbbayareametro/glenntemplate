@@ -13,20 +13,20 @@ spec:
   owner: user:glennbrown
   type: website
   parameters:
-    - title: Repository Name
-      description: Name for the new repository
+    - title: Repository Info
+      description: Repository Information
       required:
         - repoName
+
       properties:
         repoName:
           title: Repo Name
           type: string
           description: Git Repository Name
-
-    - title: Description
-      description: Short description of the new repository
-      type: string
-      name: description
+        repoDescription:
+          title: Repo Description
+          type: string
+          description: A Short Description of the Repo
   steps:
     - id: fetch-template
       name: Fetch Glenn's Template
