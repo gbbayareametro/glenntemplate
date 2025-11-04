@@ -18,7 +18,7 @@ spec:
       required:
         - repoName
       properties:
-        componentId:
+        repoName:
           title: Repo Name
           type: string
           description: Git Repository Name
