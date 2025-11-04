@@ -18,6 +18,8 @@ spec:
       required: true
       type: string
       name: repoName
+      ui:field: Text
+
     - title: Description
       description: Short description of the new repository
       required: false
