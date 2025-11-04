@@ -2,9 +2,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: glennstemplate-clone
+  name: glenntemplate-clone
   title: Clone Glenn's GitHub Template
-  description: Clones the glennstemplate repo from gbayareametro
+  description: Clones the glenntemplate repo from gbayareametro
   tags:
     - github
     - template
@@ -32,7 +32,7 @@ spec:
       name: Fetch Glenn's Template
       action: fetch:template
       input:
-        url: https://github.com/gbbayareametro/glennstemplate
+        url: https://github.com/gbbayareametro/glenntemplate
         targetPath: .
         values:
           repoName: ${{ parameters.repoName }}
