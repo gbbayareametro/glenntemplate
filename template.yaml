@@ -15,14 +15,15 @@ spec:
   parameters:
     - title: Repository Name
       description: Name for the new repository
-      required: true
+      required:
+        - repoName
+
       type: string
       name: repoName
       ui:field: Text
 
     - title: Description
       description: Short description of the new repository
-      required: false
       type: string
       name: description
   steps:
