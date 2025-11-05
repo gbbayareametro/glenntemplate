@@ -42,6 +42,8 @@ spec:
         values:
           repoName: ${{ parameters.repoName }}
           description: ${{ parameters.description }}
+          name: ${{ parameters.name }}
+
     - id: publish
       name: Publish to GitHub
       action: publish:github
@@ -51,5 +53,3 @@ spec:
         description: ${{ parameters.description }}
         defaultBranch: main
         protectDefaultBranch: true
-        values:
-          name: ${{ parameters.name }}
