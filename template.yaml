@@ -17,6 +17,7 @@ spec:
       description: Repository Information
       required:
         - repoName
+        - name
 
       properties:
         repoName:
@@ -27,6 +28,10 @@ spec:
           title: Repo Description
           type: string
           description: A Short Description of the Repo
+        name:
+          title: Your Name
+          type: string
+          description: Your Name
   steps:
     - id: fetch-template
       name: Fetch Glenn's Template
@@ -46,3 +51,5 @@ spec:
         description: ${{ parameters.description }}
         defaultBranch: main
         protectDefaultBranch: true
+        values:
+          name: ${{ parameters.name }}
